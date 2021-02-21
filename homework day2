@@ -1,0 +1,11 @@
+for i in range(1,100):
+  for asal in range(2,i):
+    if (i % asal) == 0:
+       break
+    elif (i % asal !=0) and (asal == i-1):
+      asallar.append(i)
+print(asallar)
+satır1=random.sample(asallar,3)
+satır2=random.sample(asallar,3)
+satır3=random.sample(asallar,3)
+matris=print(satır1,"\n",satır2,"\n",satır3,"\n")
