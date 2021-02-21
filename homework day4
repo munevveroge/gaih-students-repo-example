@@ -1,0 +1,17 @@
+
+prime_second=[]
+for i in range(1,1000):
+  if i<500:
+    for asal in range(2,i):
+      if (i % asal) == 0:
+        break
+      elif (i % asal !=0) and (asal == i-1):
+        prime_first.append(i)
+  else:
+    for asal in range(2,i):
+        if (i % asal) == 0:
+          break
+        elif (i % asal !=0) and (asal == i-1):
+          prime_second.append(i)
+print('prime_first=', prime_first)
+print('prime_second=', prime_second)
